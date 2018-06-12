@@ -1,6 +1,38 @@
-PERIMETRO Y AREA DEL CUADRADO
-lado=int(input("Dime cuanto mide el lado del cuadrado"))
-Perimetro=(lado*4)
-Area=(lado**2)
-print("El perimetro es ", Perimetro)
-print("El area es", Area)
+import math
+def main():
+    print("Ingrese la figura que desea hallar su perímetro y área:")
+    print("(Por ejemplo: 'cuadrado', 'circulo')")
+    dato = input()
+    if dato == 'cuadrado':
+        return cuadrado()
+    if dato == 'circulo':
+        return circulo()
+    else:
+        print("Dato inválido")
+        
+#PERIMETRO Y AREA DEL CUADRADO
+
+def cuadrado():
+    print("Escribe cuánto mide el lado del cuadrado")
+    lado = float(input())
+    print("El área es: ",area_cuadrado(lado),"\nEl perímetro es: ",perimetro_cuadrado(lado))
+def area_cuadrado(lado): 
+    area=(lado**2)
+    return round(area,2)
+def perimetro_cuadrado(lado):
+    perimetro=(lado*4)
+    return round(perimetro,2)
+
+#PERIMETRO Y AREA DEL CIRCULO 
+
+def circulo():
+    print("Escribe cuánto mide el radio del circulo")
+    radio = float(input())
+    print("El área es: ",area_circulo(radio),"\nEl perímetro es: ",perimetro_circulo(radio))
+def area_circulo(radio):
+    area = math.pi*radio**2
+    return round(area,2)
+def perimetro_circulo(radio):
+    perimetro = math.pi*2*radio
+    return round(perimetro,2)
+main()
