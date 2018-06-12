@@ -1,6 +1,8 @@
 PERIMETRO Y AREA DEL CUADRADO
-lado=int(input("Dime cuanto mide el lado del cuadrado"))
-Perimetro=(lado*4)
-Area=(lado**2)
-print("El perimetro es ", Perimetro)
-print("El area es", Area)
+lado=int(input("Dime cuanto mide el lado del cuadrado: "))
+Perimetro = (lado * 4)
+Area = (lado ** 2)
+Volumen = lado ** 3
+print("El perimetro es: ", Perimetro)
+print("El area es: ", Area)
+print("El volumen del cubo sería: ", volumen)
