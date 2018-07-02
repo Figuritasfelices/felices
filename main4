@@ -1,0 +1,5 @@
+Rectángulo
+ladomayor=
+ladomenor=
+área= ladomayor*ladomenor
+perimetro= ladomayor+ladomayor+ladomenor+ladomenor
