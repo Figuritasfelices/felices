@@ -37,3 +37,11 @@ def perimetro_circulo(radio):
     return round(perimetro,2)
 main()
 
+        
+#PERIMETRO Y AREA DEL RECTANGULO
+ladomayor=
+ladomenor=
+área=ladomayor*ladomenor
+perímetro=ladomayor+ladomayor+ladomenor+ladomenor
+
+
