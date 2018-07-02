@@ -1,0 +1,4 @@
+Circulo
+radio=
+import math
+área de un circulo= pi*radio**2
